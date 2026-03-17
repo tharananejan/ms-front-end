@@ -1,0 +1,9 @@
+.brandLogo{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    object-fit: contain;
+    /* margin-left:20px; */
+    /* background-color: #121212;
+    border: 1px solid hsla(180, 90%, 50%, 1); */
+}

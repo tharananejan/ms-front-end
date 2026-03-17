@@ -1,0 +1,40 @@
+.cardsContainer{
+    flex-direction: row;
+    gap:20px;
+    display: flex;
+    opacity: 0;
+    will-change: transform;
+    position: absolute;
+}
+.displayVer{
+    display: flex;
+    animation: slowlyDisplay 0.6s ease forwards;
+}
+
+
+.hiddenVer{
+
+    animation: slowlyVanish 0.2s ease forwards;
+}
+
+@keyframes slowlyDisplay {
+    0%{
+        opacity: 0%;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 80%;
+        transform: translateY(0);
+    }
+}
+@keyframes slowlyVanish {
+    0%{
+        opacity: 80%;
+        transform: translateY(0);
+    }
+    100%{
+        opacity: 0%;
+        transform: translateY(100px);
+        display: none;
+    }
+}

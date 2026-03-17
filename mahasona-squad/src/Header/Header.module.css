@@ -1,0 +1,12 @@
+.headerContainer{
+    display: flex;
+    gap: 60px;
+    /* flex-wrap: wrap; */
+    background-color: hsla(0, 0%, 7%, 0.6);
+    border-bottom:1px solid hsla(180, 90%, 50%, 1);
+    padding:10px 20px;
+    color:#E0E0E0;
+    /* adding a box shadow to the bottom */
+    box-shadow: 0 0 10px hsla(180, 90%, 50%, 0.5); 
+    align-items: center;
+}

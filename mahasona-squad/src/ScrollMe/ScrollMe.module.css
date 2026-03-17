@@ -1,0 +1,43 @@
+
+.scrollMark{
+    position:absolute;
+    bottom:40px;
+    animation: scrollMarkJumper 2s infinite ease-in-out;
+    will-change: transform;
+}
+.scrollMarkVanish{
+    position:absolute;
+    bottom:40px;
+    animation: scrollMarkVanish 0.5s ease forwards;
+    will-change: transform;
+}
+
+
+@keyframes scrollMarkJumper {
+    0%{
+        transform: translateY(0) rotate(0);
+    }   
+    50%{
+        transform: translateY(-20px) rotate(0);
+
+    }
+    60%{
+        transform: translateY(-20px) rotate(30deg);
+    }
+    70%{
+        transform: translateY(-20px) rotate(-30deg);
+    }
+    100%{
+        transform: translateY(0px) rotate(0deg);       
+    } 
+}
+@keyframes scrollMarkVanish {
+    0%{
+        transform: translateY(0) rotate(0);
+
+    }   
+    100%{
+        transform: translateY(-100px) rotate(180deg);
+        display: none;       
+    } 
+}
